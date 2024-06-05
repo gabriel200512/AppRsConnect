@@ -1,58 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1C4C96">
+    android:background="#295890"
+    tools:context=".MainActivity">
 
+    <!-- Container principal com bordas arredondadas -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
         android:layout_centerInParent="true"
         android:orientation="vertical"
+        android:background="#4A78AB"
         android:padding="20dp"
-        android:background="@android:color/holo_blue_light"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#427ED7"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp">
+        android:elevation="10dp"
+        android:layout_margin="10dp">
 
+        <!-- Logo -->
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/your_logo"
-            android:contentDescription="@string/logo_desc" />
+            android:src="@drawable/logo"
+            android:layout_marginBottom="40dp" />
 
+        <!-- Campo Nome -->
         <EditText
-            android:id="@+id/etName"
+            android:id="@+id/nome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:hint="NOME"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/white"
-            android:padding="10dp"
-          />
+            android:textColorHint="#ffffff"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp" />
 
+        <!-- Campo Email -->
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:hint="EMAIL"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@android:color/holo_blue_bright"
-            android:padding="10dp"
-           />
+            android:textColorHint="#ffffff"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp" />
 
+        <!-- Botão de Login -->
         <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
+            android:id="@+id/login"
+            android:layout_width="213dp"
             android:layout_height="wrap_content"
+            android:background="#1c4c96"
             android:text="LOGIN"
             android:layout_marginTop="30dp"
-            android:color="#1C4C96"
-            android:textColor="@android:color/white" />
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
     </LinearLayout>
+
 </RelativeLayout>
