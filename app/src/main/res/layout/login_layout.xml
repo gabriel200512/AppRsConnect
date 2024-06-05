@@ -55,9 +55,9 @@
             android:id="@+id/login"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
-            android:background="#1c4c96"
             android:text="LOGIN"
             android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
             android:layout_marginLeft="20dp"
             android:textColor="#ffffff"
             android:textStyle="bold" />
