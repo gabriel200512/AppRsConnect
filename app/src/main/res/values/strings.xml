@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppRsConnect</string>
+    <string name="rs_connect">RS CONNECT</string>
+    <string name="abrigo">abrigo</string>
 </resources>
